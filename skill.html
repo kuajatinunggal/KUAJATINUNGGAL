@@ -484,24 +484,14 @@
         AOS.init({offset: 0});
       
 
-    function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
+   function togglePenjelasan(id) {
+    const penjelasan = document.getElementById(id);
+
+    if (penjelasan.style.display === "none" || penjelasan.style.display === "") {
+        penjelasan.style.display = "block";
+    } else {
+        penjelasan.style.display = "none";
     }
-
-    function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-500px)";
-    }
-
-    function togglePenjelasan(id) {
-        const penjelasan = document.getElementById(id);
-
-        if (penjelasan.style.display === "none" || penjelasan.style.display === "") {
-            penjelasan.style.display = "block";
-        } else {
-            penjelasan.style.display = "none";
-        }
     }
 </script>
 </body>
