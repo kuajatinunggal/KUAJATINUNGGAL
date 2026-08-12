@@ -201,7 +201,31 @@
             background-color: rgb(38, 150, 2);
             transform: scale(0.98);
         }
+.titik {
+    cursor: pointer;
+    color: #cccccc;
+    transition: 0.3s;
+}
 
+.titik:hover {
+    color: rgb(58, 211, 3);
+}
+
+.penjelasan {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.45);
+    border-left: 3px solid rgb(58, 211, 3);
+    border-radius: 8px;
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.penjelasan p {
+    margin-bottom: 10px;
+}
         @media (max-height: 800px) {
             body {
                 height: auto;
@@ -459,15 +483,28 @@
     <script>
         AOS.init({offset: 0});
         
-        function hamburg() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(0px)"
+       <script>
+    AOS.init({offset: 0});
+
+    function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+    }
+
+    function togglePenjelasan(id) {
+        const penjelasan = document.getElementById(id);
+
+        if (penjelasan.style.display === "none" || penjelasan.style.display === "") {
+            penjelasan.style.display = "block";
+        } else {
+            penjelasan.style.display = "none";
         }
-        
-        function cancel() {
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(-500px)"
-        }
-    </script>
+    }
+</script>
 </body>
 </html>
