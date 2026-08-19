@@ -436,7 +436,17 @@
             border-radius: 20px;
             overflow: hidden;
         }
-
+    @media (max-height: 800px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+            }
+            
+            .services-container {
+                height: auto;
+                min-height: 90vh;
+            }
+        }
         @media (max-width: 884px) {
             .about-grid {
                 grid-template-columns: 1fr;
