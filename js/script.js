@@ -1,4 +1,4 @@
-// Subscrbe YouTube Tamzidan Mahdiyin
+
 
 function hamburg(){
     const navbar = document.querySelector(".dropdown")
@@ -9,7 +9,7 @@ function cancel(){
     navbar.style.transform  = "translateY(-500px)"
 }
 
-// Animasi Menulis
+
 
 const texts = [
     "Kec. Jatinunggal",
@@ -47,4 +47,3 @@ function eraseText() {
 
 window.onload = typeWriter;
 
-// Subscrbe YouTube Tamzidan Mahdiyin
